@@ -44,14 +44,14 @@ const Hero = () => {
           </div>
           
           {/* Thin Divider Line */}
-          <div className={`w-16 h-px bg-white opacity-60 mt-4 transition-all duration-500 delay-300 ${isLoaded ? 'opacity-60 scale-x-100' : 'opacity-0 scale-x-0'} `}></div>
+          <div className={`w-16 h-px bg-white opacity-60 mt-2 transition-all duration-500 delay-300 ${isLoaded ? 'opacity-60 scale-x-100' : 'opacity-0 scale-x-0'} `}></div>
           
           {/* Tagline */}
-          <p className={`mt-4 text-sm uppercase tracking-widest text-zinc-300 transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+          <p className={`mt-2 text-sm uppercase tracking-widest text-zinc-300 transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
             Est. 2024
           </p>
           {/* Logo - Centered and slide in from top */}
-          <div className={`transition-all duration-700 mt-12 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
+          <div className={`transition-all duration-700 mt-8 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
             <img
               src={Fade2BlackLogo}
               alt="Fade2Black Logo"
@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
         
         {/* Bottom Section Content (White Background) */}
-        <div className="relative w-full h-[40%] flex flex-col justify-start items-center text-black pt-8">
+        <div className="relative w-full h-[40%] flex flex-col justify-start items-center text-black pt-2">
           {/* Brand Name - 2Black */}
           <div className={`text-center transition-all duration-1000 delay-200 ${isLoaded ? 'opacity-80 scale-100' : 'opacity-0 scale-90'} ${animationComplete ? 'translate-x-0' : 'translate-x-8'}`}>
             <p className="text-xl font-bold uppercase tracking-wider text-black">2Black</p>
@@ -71,12 +71,12 @@ const Hero = () => {
            <div className={`w-16 h-px bg-black opacity-60 mt-2 transition-all duration-500 delay-300 ${isLoaded ? 'opacity-60 scale-x-100' : 'opacity-0 scale-x-0'}`}></div>
           
           {/* Tagline with improved spacing */}
-          <p className={`text-base text-center font-medium max-w-xs mt-4 transition-all duration-700 delay-400 ${isLoaded ? 'opacity-80' : 'opacity-0'}`}>
+          <p className={`text-base text-center font-medium max-w-xs mt-2 transition-all duration-700 delay-400 ${isLoaded ? 'opacity-80' : 'opacity-0'}`}>
             Where precision meets perfection
           </p>
           
           {/* Services List with improved spacing and animation */}
-          <div className={`mt-6 text-center transition-all duration-700 delay-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className={`mt-2 text-center transition-all duration-700 delay-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="text-sm font-medium text-zinc-800 mb-2 uppercase tracking-wider">Services</div>
             <div className="text-sm text-zinc-700">
               Premium Cuts • Beard Grooming • Styling
@@ -84,7 +84,7 @@ const Hero = () => {
           </div>
           
           {/* CTA Button with enhanced hover effect */}
-          <Link to="/schedule" className={`mt-6 transition-all duration-700 delay-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <Link to="/schedule" className={`mt-2 transition-all duration-700 delay-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <button className="relative overflow-hidden text-base font-medium px-10 py-3 rounded-none group border border-black">
               <span className="absolute inset-0 bg-black transition-transform duration-300 origin-left transform scale-x-0 group-hover:scale-x-100"></span>
               <span className="relative z-10 transition-colors duration-300 group-hover:text-white">BOOK NOW</span>
