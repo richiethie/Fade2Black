@@ -5,7 +5,7 @@ import Dre from "../assets/img/Dre.jpg";
 export const barberCalendars = [
     {
         type: "guest",
-        name: "Dre Harris",
+        name: "Dre Stylez",
         title: "Master Barber",
         calendarId: "6774376",
         img: Dre,

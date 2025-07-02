@@ -41,7 +41,7 @@ const Team = () => {
 
           {/* Info */}
           <div className={`text-center mb-8 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            <h3 className="text-2xl font-bold text-black mb-2">Dre Harris</h3>
+            <h3 className="text-2xl font-bold text-black mb-2">Dre Stylez</h3>
             {/* <p className="text-lg text-zinc-600 mb-4">15+ Years of Excellence</p> */}
             <p className="text-sm text-zinc-700 leading-relaxed mb-6">
               "Every cut tells a story. My passion is helping each client discover their best look while delivering an experience that goes beyond expectations."
@@ -120,7 +120,7 @@ const Team = () => {
             <div className="space-y-8">
               {/* Title */}
               <div>
-                <h3 className="text-3xl font-bold text-black mb-2">Dre Harris</h3>
+                <h3 className="text-3xl font-bold text-black mb-2">Dre Stylez</h3>
                 <p className="text-lg text-zinc-600">Passionate about the art of grooming</p>
               </div>
 
