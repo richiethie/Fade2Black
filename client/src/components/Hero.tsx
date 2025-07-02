@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useIsMobile } from '@/context/MobileContext';
 import { Link } from "react-router-dom";
 import Fade2BlackLogo from "../assets/img/F2B-White.png"; // Updated to use the new logo
+import SampleVid from "../assets/video/SampleLandingVideo.mp4"
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -24,7 +25,15 @@ const Hero = () => {
 
         {/* Split Background - 60% Black on top, 40% White on bottom */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 right-0 h-[60%] bg-black"></div>
+          <video
+            className="absolute top-0 left-0 right-0 h-[60%] object-cover w-full"
+            src={SampleVid}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          <div className="absolute top-0 left-0 right-0 h-[60%] bg-black/50 pointer-events-none" />
           <div className="absolute bottom-0 left-0 right-0 h-[40%] bg-white"></div>
         </div>
         
@@ -39,23 +48,23 @@ const Hero = () => {
         <div className="relative w-full h-[60%] flex flex-col justify-center items-center text-white">
           
           {/* Brand Name */}
-          <div className={`mt-6 text-center transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100' : 'opacity-0'} ${animationComplete ? 'translate-x-0' : '-translate-x-8'}`}>
+          <div className={`mt-6 text-center transition-all duration-700 z-4 delay-300 ${isLoaded ? 'opacity-100' : 'opacity-0'} ${animationComplete ? 'translate-x-0' : '-translate-x-8'}`}>
             <p className="text-xl font-bold uppercase tracking-wider text-white">Fade</p>
           </div>
           
           {/* Thin Divider Line */}
-          <div className={`w-16 h-px bg-white opacity-60 mt-2 transition-all duration-500 delay-300 ${isLoaded ? 'opacity-60 scale-x-100' : 'opacity-0 scale-x-0'} `}></div>
+          <div className={`w-16 h-px bg-white opacity-60 mt-2 z-4 transition-all duration-500 delay-300 ${isLoaded ? 'opacity-60 scale-x-100' : 'opacity-0 scale-x-0'} `}></div>
           
           {/* Tagline */}
-          <p className={`mt-2 text-sm uppercase tracking-widest text-zinc-300 transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+          <p className={`mt-2 text-sm uppercase z-4 tracking-widest text-zinc-300 transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
             Est. 2024
           </p>
           {/* Logo - Centered and slide in from top */}
-          <div className={`transition-all duration-700 mt-8 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
+          <div className={`transition-all duration-700 mt-12 z-5 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
             <img
               src={Fade2BlackLogo}
               alt="Fade2Black Logo"
-              className="w-full max-w-[220px] p-4 bg-[#1b1f23]/80 rounded-xl"
+              className="w-full max-w-[250px] p-4 bg-black/70"
             />
           </div>
         </div>
@@ -93,14 +102,14 @@ const Hero = () => {
         </div>
         
         {/* Large "FADE" Text Overlay - Similar to desktop effect */}
-        <div className={`absolute -left-4 top-16 pointer-events-none transition-all duration-1500 ease-out ${animationComplete ? 'opacity-25' : 'opacity-0'}`}>
-          <h1 className="text-[12rem] font-black uppercase tracking-normal text-white mix-blend-overlay whitespace-nowrap">
+        <div className={`absolute -left-4 top-12 pointer-events-none transition-all duration-1500 ease-out ${animationComplete ? 'opacity-35' : 'opacity-0'}`}>
+          <h1 className="text-[12rem] font-black uppercase tracking-normal text-black mix-blend-overlay whitespace-nowrap">
             Fade
           </h1>
         </div>
         
         {/* Large "2BLACK" Text Overlay - Similar to desktop effect */}
-        <div className={`absolute -right-6 bottom-10 pointer-events-none transition-all duration-1500 ease-out ${animationComplete ? 'opacity-25' : 'opacity-0'}`}>
+        <div className={`absolute -right-6 bottom-10 pointer-events-none transition-all duration-1500 ease-out ${animationComplete ? 'opacity-15' : 'opacity-0'}`}>
           <h1 className="text-[10rem] font-black uppercase tracking-normal text-black mix-blend-overlay whitespace-nowrap">
             2Black
           </h1>
@@ -124,7 +133,15 @@ const Hero = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Split Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-black"></div>
+          <video
+            className="absolute top-0 left-0 right-0 h-full object-cover object-center w-2/3"
+            src={SampleVid}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          <div className="absolute top-0 left-0 right-0 h-full bg-black/60 pointer-events-none" />
         <div className={`absolute right-0 top-0 bottom-0 w-1/3 bg-white transition-all duration-1000 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0 translate-x-full'}`}></div>
       </div>
       
@@ -132,7 +149,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMykiLz48L3N2Zz4=')] opacity-10"></div>
       
       {/* Large Text Overlay - Appears from offscreen */}
-      <div className={`absolute -left-8 top-0 bottom-0 flex items-center transition-all duration-1500 ease-out ${isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
+      <div className={`absolute -left-8 top-200 bottom-0 flex items-center transition-all duration-1500 ease-out ${isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
         {/* The large h1 with mix-blend-overlay */}
         <h1 className="text-[12rem] md:text-[16rem] lg:text-[20rem] xl:text-[24rem] font-black uppercase tracking-normal text-white mix-blend-overlay opacity-40 whitespace-nowrap">
           Fade
@@ -144,10 +161,19 @@ const Hero = () => {
         {/* Left Content Area */}
         <div className="w-2/3 h-full flex items-center justify-center">
           <div className={`ml-24 transition-opacity duration-1000 delay-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="flex flex-col items-start text-white max-w-lg">
+            <div className="flex flex-col items-center text-white mb-24 max-w-lg">
+              {/* Logo - Centered and slide in from top */}
+              <div className={`transition-all duration-700 mb-12 z-5 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
+                <img
+                  src={Fade2BlackLogo}
+                  alt="Fade2Black Logo"
+                  className="w-full max-w-[430px] py-4 px-8 bg-black/70"
+                />
+              </div>
               <div className="flex items-center mb-8">
                 <div className="h-px w-12 bg-white opacity-50 mr-4"></div>
-                <span className="text-sm tracking-widest uppercase text-zinc-400">Est. 2024</span>
+                <span className="text-sm tracking-widest uppercase text-zinc-200">Est. 2024</span>
+                <div className="h-px w-12 bg-white opacity-50 ml-4"></div>
               </div>
               
               {/* <img
@@ -157,10 +183,11 @@ const Hero = () => {
               /> */}
               
               <div className="relative mt-6 mb-10">
-                <h2 className="font-light text-2xl max-w-md">
+                <h2 className="font-light text-center text-2xl max-w-md">
                   A premium grooming experience where precision meets perfection
                 </h2>
                 <div className="absolute -left-6 top-0 bottom-0 w-px bg-white opacity-30"></div>
+                <div className="absolute -right-6 top-0 bottom-0 w-px bg-white opacity-30"></div>
               </div>
               
               <Link to="/schedule">
@@ -200,9 +227,9 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="text-sm font-light">
+        <div className="text-sm font-light text-black">
           <div className="flex items-center">
-            <div className="h-px w-6 bg-white opacity-50 mr-3"></div>
+            <div className="h-px w-6 bg-black opacity-50 mr-3"></div>
             SINCE 2024
           </div>
         </div>

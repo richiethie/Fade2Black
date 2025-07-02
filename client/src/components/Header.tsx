@@ -6,7 +6,7 @@ import { useIsMobile } from "@/context/MobileContext";
 import { IoClose, IoLink } from "react-icons/io5";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaBars, FaFacebook, FaInstagram, FaSnapchatGhost, FaUserCircle } from "react-icons/fa";
-import F2B from "@/assets/img/F2B-White.png"; // Assuming you have a barber pole image
+import F2B from "@/assets/img/F2B-Short.png"; // Assuming you have a barber pole image
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,12 +71,12 @@ const Header = () => {
                     </button>
                   </div>
                   <nav className="flex flex-col items-center mt-12">
-                    <Link to="/" onClick={toggleDrawer} className="text-3xl text-white font-bold hover:text-orange-300 py-6 block">Home</Link>
-                    <Link to="/services" onClick={toggleDrawer} className="text-3xl text-white font-bold hover:text-orange-300 py-6 block">Services</Link>
-                    <Link to="/schedule" onClick={toggleDrawer} className="text-3xl text-white font-bold hover:text-orange-300 py-6 block">Schedule</Link>
-                    <Link to="/gallery" onClick={toggleDrawer} className="text-3xl text-white font-bold hover:text-orange-300 py-6 block">Gallery</Link>
-                    {/* <Link to="/memberships" onClick={toggleDrawer} className="text-3xl text-white font-bold hover:text-orange-300 py-6 block">Membership</Link> */}
-                    <Link to="/location" onClick={toggleDrawer} className="text-3xl text-white font-bold hover:text-orange-300 py-6 block">Location</Link>
+                    <Link to="/" onClick={toggleDrawer} className="text-4xl text-white hover:text-orange-300 py-5 tracking-wider block"><h1>Home</h1></Link>
+                    <Link to="/services" onClick={toggleDrawer} className="text-4xl text-white hover:text-orange-300 py-5 tracking-wider block"><h1>Services</h1></Link>
+                    <Link to="/schedule" onClick={toggleDrawer} className="text-4xl text-white hover:text-orange-300 py-5 tracking-wider block"><h1>Schedule</h1></Link>
+                    <Link to="/gallery" onClick={toggleDrawer} className="text-4xl text-white hover:text-orange-300 py-5 tracking-wider block"><h1>Gallery</h1></Link>
+                    {/* <Link to="/memberships" onClick={toggleDrawer} className="text-4xl text-white hover:text-orange-300 py-5 tracking-wider block"><h1>Membership</h1></Link> */}
+                    <Link to="/location" onClick={toggleDrawer} className="text-4xl text-white hover:text-orange-300 py-5 tracking-wider block"><h1>Location</h1></Link>
                   </nav>
                   <div className="text-center mt-6">
                     {/* <button onClick={handleAuthAction} className="text-white text-xl font-semibold border border-white px-4 py-2 rounded-md cursor-pointer hover:text-orange-300 hover:border-orange-300">

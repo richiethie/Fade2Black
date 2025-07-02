@@ -6,14 +6,17 @@ import Header from '@/components/Header';
 // Images
 import cut1 from '../assets/haircut/cut1.jpeg';
 import cut2 from '../assets/haircut/cut2.jpeg';
-import cut3 from '../assets/haircut/cut3.jpg';
-import cut4 from '../assets/haircut/cut4.jpeg';
+import cut3 from '../assets/haircut/cut3.jpeg';
+import cut4 from '../assets/haircut/cut4.jpg';
+import cut5 from '../assets/haircut/cut5.jpg';
+import cut6 from '../assets/haircut/cut6.jpg';
 
 // Videos  (⚠️ MOV works in Safari; for broad support convert to .mp4 or .webm)
 import cutvid1 from '../assets/haircut/cutvid1.mov';
 import cutvid2 from '../assets/haircut/cutvid2.mov';
 import cutvid3 from '../assets/haircut/cutvid3.mov';
 import cutvid4 from '../assets/haircut/cutvid4.mov';
+import cutvid5 from '../assets/haircut/cutvid5.mov';
 
 /* ---------- Types ---------- */
 type MediaType = 'image' | 'video';
@@ -95,7 +98,7 @@ const Gallery: React.FC = () => {
               )}
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                 <div className="p-4 w-full">
-                  <h3 className="text-white font-bold text-lg">{item.caption}</h3>
+                  {/* <h3 className="text-white font-bold text-lg">{item.caption}</h3> */}
                 </div>
               </div>
             </div>
@@ -126,6 +129,7 @@ const Gallery: React.FC = () => {
                       controls
                       autoPlay
                       muted
+                      playsInline
                       className="pointer-events-auto max-h-screen object-contain"
                     />
                   </div>

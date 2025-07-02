@@ -1,4 +1,4 @@
-import Charles from "../assets/img/Charles2.1.jpg";
+import Dre from "../assets/img/Dre.jpg";
 // import Jaylen from "../assets/img/Jaylen2.1.jpg";
 // import Trish from "../assets/img/Trish2.1.jpg";
 
@@ -8,7 +8,7 @@ export const barberCalendars = [
         name: "Dre Harris",
         title: "Master Barber",
         calendarId: "6774376",
-        img: Charles,
+        img: Dre,
     },
     // {
     //     type: "guest",

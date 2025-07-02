@@ -28,77 +28,85 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Full Haircut & Facial Hair",
-      price: 50,
-      description: "A tailored haircut and facial hair grooming session for a sharp, cohesive look.",
+      title: "Adult Haircut (No Facial Hair)",
+      price: 40,
+      description: "Tailored haircut for adults. Facial hair not included.",
       icon: <FaScissors size={24} />,
-      categories: ["haircuts", "facial"],
+      categories: ["haircuts"],
       featured: true,
     },
     {
       id: 2,
-      title: "Scalp Treatment",
-      price: 45,
-      description: "A nourishing treatment to soothe and revitalize your scalp, promoting healthy hair.",
-      icon: <FaShower size={24} />,
-      categories: ["specialty"],
-    },
-    {
-      id: 3,
-      title: "Kid's Haircut (12 & Under)",
+      title: "Kids Haircut (Age 2–12)",
       price: 30,
-      description: "A fun, precise haircut designed for kids 12 and under, ensuring a comfortable experience.",
+      description: "A clean and comfortable haircut for kids aged 2 to 12.",
       icon: <PiScissorsFill size={24} />,
       categories: ["haircuts"],
     },
     {
-      id: 4,
-      title: "Bald Head | Beard Trim & Lining",
-      price: 35,
-      description: "A smooth bald head shave with precise beard trimming and lining for a polished appearance.",
+      id: 3,
+      title: "Deluxe Haircut + Facial Hair",
+      price: 50,
+      description: "Complete haircut with facial hair grooming included.",
       icon: <GiRazor size={24} />,
       categories: ["haircuts", "facial"],
+      featured: true,
     },
     {
-      id: 5,
-      title: "Hair Lining & Taper Back",
-      price: 30,
-      description: "Crisp hair lining and tapered back for a clean, defined style that enhances your look.",
+      id: 4,
+      title: "Taper + Lining (No Facial Hair)",
+      price: 35,
+      description: "Crisp taper fade with precise hairline lining. No facial hair included.",
       icon: <RiScissorsCutFill size={24} />,
       categories: ["haircuts"],
     },
     {
+      id: 5,
+      title: "Lining + Facial Hair (No Taper)",
+      price: 30,
+      description: "Hairline and beard lineup. Taper not included.",
+      icon: <FaClipboardList size={24} />,
+      categories: ["facial"],
+    },
+    {
       id: 6,
-      title: "Full Haircut, Beard & Enhancements",
-      price: 55,
-      description: "A complete haircut, beard grooming, and enhancements for a bold, refined finish.",
-      icon: <PiSparkle size={24} />,
-      categories: ["haircuts", "facial", "specialty"],
-      featured: true,
+      title: "Senior Haircut (Age 55+)",
+      price: 30,
+      description: "Clean, professional haircut for seniors age 55 and up.",
+      icon: <FaRegSmile size={24} />,
+      categories: ["haircuts"],
     },
     {
       id: 7,
-      title: "Haircut & Sponge",
-      price: 50,
-      description: "A stylish haircut paired with sponge styling for textured, defined curls.",
-      icon: <TbMassage size={24} />,
-      categories: ["haircuts", "specialty"],
+      title: "Beard Trim",
+      price: 20,
+      description: "Detailed trimming and shaping of your beard.",
+      icon: <GiRazor size={24} />,
+      categories: ["facial"],
     },
     {
       id: 8,
-      title: "Full Haircut | No Facial Hair",
-      price: 45,
-      description: "A precision haircut tailored to your style, without facial hair grooming.",
-      icon: <FaScissors size={24} />,
+      title: "Lining",
+      price: 20,
+      description: "Hairline detailing and cleanup — perfect between full cuts.",
+      icon: <RiScissorsCutFill size={24} />,
       categories: ["haircuts"],
     },
     {
       id: 9,
-      title: "Haircut | Removal of Longer Hair",
-      price: 55,
-      description: "A detailed haircut with expert removal of longer hair for a sleek, polished look.",
-      icon: <RiScissorsCutFill size={24} />,
-      categories: ["haircuts"],
+      title: "Deluxe Facial",
+      price: 50,
+      description: "Relaxing deep-clean facial treatment for refreshed skin.",
+      icon: <FaSpa size={24} />,
+      categories: ["specialty"],
+    },
+    {
+      id: 10,
+      title: "Deluxe Shampoo + Haircut",
+      price: 100,
+      description: "A luxurious shampoo service followed by a precision haircut.",
+      icon: <FaShower size={24} />,
+      categories: ["haircuts", "specialty"],
     },
   ];
 
@@ -117,23 +125,23 @@ const Services = () => {
         
 
         
-        <div className="max-w-7xl mx-auto px-8 py-24 relative">
+        <div className="max-w-7xl mx-auto px-8 pt-24 pb-12 md:pb-24 relative">
           <div className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             {/* Header */}
-            <div className="flex items-center justify-center mb-8">
+            <div className="flex items-center justify-center mb-6">
               <span className="text-sm tracking-[0.3em] text-zinc-400 uppercase">Services</span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-light text-white mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-6xl tracking-wide md:tracking-normal font-light text-white mb-6 tracking-tight">
               Precision <span className="">Craftsmanship</span>
             </h1>
-            <p className="text-xl text-zinc-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-md md:text-xl text-zinc-300 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
               Where every cut tells a story of expertise, every shave reflects mastery, and every detail matters.
             </p>
             
             {/* CTA */}
             <Link to="/schedule">
-              <button className="relative overflow-hidden text-lg font-medium px-12 py-4 border-2 border-white cursor-pointer group hover:border-zinc-300 transition-all duration-300">
+              <button className="relative overflow-hidden text-md md:text-lg font-medium px-8 md:px-12 py-4 border-2 border-white cursor-pointer group hover:border-zinc-300 transition-all duration-300">
                 <span className="relative z-2 text-white transition-colors duration-300 group-hover:text-black">BOOK APPOINTMENT</span>
                 <span className="absolute inset-0 bg-white transform -translate-y-full transition-transform duration-300 group-hover:translate-y-0"></span>
               </button>

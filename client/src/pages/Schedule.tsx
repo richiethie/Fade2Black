@@ -29,7 +29,7 @@ const BookingEmbed = ({ calendarId }: { calendarId: string }) => {
   return (
     <div className={`${isMobile ? "w-full" : "w-full"} rounded-xl shadow-2xl overflow-hidden`}>
       <iframe
-        src={`https://app.acuityscheduling.com/schedule.php?owner=26056634&calendarID=${calendarId}&ref=embedded_csp`}
+        src={`https://app.acuityscheduling.com/schedule.php?owner=36223260&ref=embedded_csp`} // &calendarID=${calendarId} commented out since only 1 barber
         title="Schedule Appointment"
         className="w-full min-h-screen rounded-lg"
         frameBorder="0"
@@ -62,7 +62,7 @@ const Schedule = () => {
               {/* <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-radial from-[#1b1f23] to-transparent opacity-30 rounded-full transform translate-x-1/3 -translate-y-1/3"></div> */}
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-radial from-[#1b1f23] to-transparent opacity-20 rounded-full transform -translate-x-1/3 translate-y-1/3"></div>
               
-              <h1 className="text-5xl md:text-6xl tracking-normal text-white mb-4 md:mb-6 relative">Book Your Experience</h1>
+              <h1 className="text-4xl md:text-6xl tracking-wide md:tracking-normal text-white mb-4 md:mb-6 relative">Book Your Experience</h1>
               <div className="w-48 h-1 bg-gray-200 mb-6 md:mb-8"></div>
               <p className="text-sm md:text-xl text-center text-gray-300 max-w-2xl">
                 We're committed to delivering premium grooming services tailored to your style. Choose your preferred stylist below to schedule your appointment.

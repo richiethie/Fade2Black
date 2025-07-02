@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MasterBarber from "../assets/img/Charles2.jpeg"; // Using the existing image
+import MasterBarber from "../assets/img/Dre.jpg"; // Using the existing image
 import { useIsMobile } from '@/context/MobileContext';
 import { Link } from "react-router-dom";
 

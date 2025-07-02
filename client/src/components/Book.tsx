@@ -162,19 +162,19 @@ const Book = () => {
             {/* Primary CTA */}
             <div className="space-y-6">
               <Link to="/schedule">
-                <button className="bg-white text-black px-12 py-5 text-xl font-bold hover:bg-zinc-200 transition-colors duration-300 w-full mb-4">
+                <button className="bg-white cursor-pointer text-black px-12 py-5 text-xl font-bold hover:bg-zinc-200 transition-colors duration-300 w-full mb-4">
                   BOOK YOUR APPOINTMENT
                 </button>
               </Link>
               
               <div className="flex space-x-4">
                 <Link to="/services" className="flex-1">
-                  <button className="border-2 border-white text-white px-6 py-3 font-medium hover:bg-white hover:text-black transition-colors duration-300 w-full">
+                  <button className="border-2 cursor-pointer border-white text-white px-6 py-3 font-medium hover:bg-white hover:text-black transition-colors duration-300 w-full">
                     VIEW SERVICES
                   </button>
                 </Link>
                 <Link to="/contact" className="flex-1">
-                  <button className="border border-white/50 text-zinc-300 px-6 py-3 font-medium hover:border-white hover:text-white transition-colors duration-300 w-full">
+                  <button className="border border-white/50 cursor-pointer text-zinc-300 px-6 py-3 font-medium hover:border-white hover:text-white transition-colors duration-300 w-full">
                     CONTACT US
                   </button>
                 </Link>
@@ -227,10 +227,10 @@ const Book = () => {
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span className="text-zinc-300">One-on-one personal attention</span>
                   </div>
-                  <div className="flex items-center space-x-3">
+                  {/* <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span className="text-zinc-300">15+ years of master craftsmanship</span>
-                  </div>
+                  </div> */}
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span className="text-zinc-300">Premium products & techniques</span>
