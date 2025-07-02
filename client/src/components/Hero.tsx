@@ -117,7 +117,7 @@ const Hero = () => {
         
         {/* Business Hours - Added to mobile */}
         <div className={`absolute bottom-4 left-0 right-0 text-center text-xs text-zinc-500 transition-all duration-700 delay-800 ${animationComplete ? 'opacity-100' : 'opacity-0'}`}>
-          <p>OPEN TUE-FRI: 11AM-7PM | SAT: 12PM-7PM</p>
+          <p>OPEN TUE-SAT: 9AM-6PM</p>
         </div>
         
         {/* Fixed Top Accent Line with animation */}
@@ -216,14 +216,14 @@ const Hero = () => {
       
       {/* Bottom Text Bar */}
       <div className={`absolute bottom-0 left-0 right-0 flex justify-between items-center px-12 py-6 text-white transition-all duration-1000 delay-800 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <div className="text-sm font-light flex flex-col items-end">
+        <div className="text-sm font-light flex flex-col items-start">
           <div className="flex items-center space-x-6">
-            <span>OPEN TUE-FRI</span>
-            <span>11AM - 7PM</span>
+            <span>OPEN TUE-SAT</span>
+            <span>9AM - 6PM</span>
           </div>
-          <div className="flex items-center space-x-6">
-            <span>SAT</span>
-            <span>12PM - 7PM</span>
+          <div className="flex items-start space-x-6">
+            <span>CLOSED SUN-MON</span>
+            
           </div>
         </div>
         

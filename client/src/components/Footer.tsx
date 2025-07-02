@@ -30,7 +30,7 @@ const Footer = () => {
                 <p className="text-sm">15 Sterling Ave, Suite 1</p>
                 <p className="text-sm">Oshkosh, WI 54901</p>
                 <p>
-                  <a href="tel:+17733860067" className="text-sm">773-386-0067</a>
+                  <a href="tel:+19202511683" className="text-sm">920-251-1683</a>
                 </p>
                 <p>
                   <a href="mailto:fade2blackbarbershop@gmail.com" className="text-xs">fade2blackbarbershop@gmail.com</a>
@@ -98,7 +98,7 @@ const Footer = () => {
                 <p className="text-sm">15 Sterling Ave, Suite 1</p>
                 <p className="text-sm">Oshkosh, WI 54901</p>
                 <p>
-                  <a href="tel:+17733860067" className="text-sm">773-386-0067</a>
+                  <a href="tel:+19202511683" className="text-sm">920-251-1683</a>
                 </p>
                 <p>
                   <a href="mailto:fade2blackbarbershop@gmail.com" className="text-xs">fade2blackbarbershop@gmail.com</a>

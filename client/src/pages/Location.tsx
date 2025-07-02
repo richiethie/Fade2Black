@@ -37,8 +37,8 @@ const Location = () => {
                     <Phone className="mt-1 mr-4 flex-shrink-0 text-gray-800" size={24} />
                     <div>
                       <h3 className="font-semibold text-xl mb-1">Phone</h3>
-                      <a href="tel:+17733860067" className="text-lg hover:text-gray-600 transition-colors">
-                        773-386-0067
+                      <a href="tel:+19202511683" className="text-lg hover:text-gray-600 transition-colors">
+                        920-251-1683
                       </a>
                     </div>
                   </div>
@@ -58,8 +58,7 @@ const Location = () => {
                     <div>
                       <h3 className="font-semibold text-xl mb-1">Hours</h3>
                       <div className="grid grid-cols-2 gap-1 text-lg">
-                        <p>Tuesday - Friday</p><p>11:00 AM - 7:00 PM</p>
-                        <p>Saturday</p><p>12:00 PM - 7:00 PM</p>
+                        <p>Tuesday - Saturday</p><p>9:00 AM - 6:00 PM</p>
                         <p>Sunday</p><p>Closed</p>
                         <p>Monday</p><p>Closed</p>
                       </div>

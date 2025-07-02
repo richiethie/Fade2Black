@@ -86,12 +86,8 @@ const Book = () => {
                 <h4 className="text-white font-medium mb-2">Hours</h4>
                 <div className="space-y-1 text-sm text-zinc-300">
                   <div className="flex justify-between">
-                    <span>Tue - Fri</span>
-                    <span>11AM - 7PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>12PM - 7PM</span>
+                    <span>Tue - Sat</span>
+                    <span>9AM - 6PM</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sun - Mon</span>
@@ -204,12 +200,8 @@ const Book = () => {
                   <h4 className="text-xl font-semibold text-white mb-4">Business Hours</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
-                      <span className="text-zinc-300">Tuesday - Friday</span>
-                      <span className="text-white font-medium">11:00 AM - 7:00 PM</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-zinc-300">Saturday</span>
-                      <span className="text-white font-medium">12:00 PM - 7:00 PM</span>
+                      <span className="text-zinc-300">Tuesday - Saturday</span>
+                      <span className="text-white font-medium">9:00 AM - 6:00 PM</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-zinc-300">Sunday - Monday</span>
