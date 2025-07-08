@@ -33,7 +33,7 @@ const Footer = () => {
                   <a href="tel:+19202511683" className="text-sm">920-251-1683</a>
                 </p>
                 <p>
-                  <a href="mailto:fade2blackbarbershop@gmail.com" className="text-xs">fade2blackbarbershop@gmail.com</a>
+                  <a href="mailto:fade2blackbarbersuite@gmail.com" className="text-xs">fade2blackbarbersuite@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ const Footer = () => {
                   <a href="tel:+19202511683" className="text-sm">920-251-1683</a>
                 </p>
                 <p>
-                  <a href="mailto:fade2blackbarbershop@gmail.com" className="text-xs">fade2blackbarbershop@gmail.com</a>
+                  <a href="mailto:fade2blackbarbersuite@gmail.com" className="text-xs">fade2blackbarbersuite@gmail.com</a>
                 </p>
               </div>
             </div>

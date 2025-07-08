@@ -47,8 +47,8 @@ const Location = () => {
                     <Mail className="mt-1 mr-4 flex-shrink-0 text-gray-800" size={24} />
                     <div>
                       <h3 className="font-semibold text-xl mb-1">Email</h3>
-                      <a href="mailto:fade2blackbarbershop@gmail.com" className="text-sm md:text-lg hover:text-gray-600 transition-colors">
-                        fade2blackbarbershop@gmail.com
+                      <a href="mailto:fade2blackbarbersuite@gmail.com" className="text-sm md:text-lg hover:text-gray-600 transition-colors">
+                        fade2blackbarbersuite@gmail.com
                       </a>
                     </div>
                   </div>
