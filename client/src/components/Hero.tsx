@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useIsMobile } from '@/context/MobileContext';
 import { Link } from "react-router-dom";
 import Fade2BlackLogo from "../assets/img/F2B-White.png"; // Updated to use the new logo
-import SampleVid from "../assets/video/SampleLandingVideo.mp4"
+import SampleVid from "../assets/video/Samplevid2.mov"
 
 const Hero = () => {
   const isMobile = useIsMobile();
