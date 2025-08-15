@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import LandingServicesPhoto from "../assets/img/LandingServicesPhoto.jpg"; 
+import LandingServicesPhoto from "../assets/img/LandingServicesPhoto3.jpg"; 
 import Team from "../assets/img/Team.jpeg";
 import { useIsMobile } from '@/context/MobileContext';
 import { Link } from "react-router-dom";

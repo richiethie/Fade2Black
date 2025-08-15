@@ -1,4 +1,4 @@
-import Dre from "../assets/img/Dre.jpg";
+import Dre from "../assets/img/Dre2.jpg";
 // import Jaylen from "../assets/img/Jaylen2.1.jpg";
 // import Trish from "../assets/img/Trish2.1.jpg";
 

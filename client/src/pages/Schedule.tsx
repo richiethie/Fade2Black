@@ -96,7 +96,7 @@ const Schedule = () => {
                         <img
                           src={barber.img}
                           alt={barber.name}
-                          className="w-48 h-48 rounded-full object-cover object-top shadow-lg z-5"
+                          className="w-48 h-48 rounded-full object-cover object-center shadow-lg z-5"
                         />
                       ) : (
                         <div className="relative w-24 h-24 rounded-full bg-black flex items-center justify-center">

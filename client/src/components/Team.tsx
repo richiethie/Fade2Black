@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MasterBarber from "../assets/img/Dre.jpg"; // Using the existing image
+import MasterBarber from "../assets/img/Dre2.jpg"; // Using the existing image
 import { useIsMobile } from '@/context/MobileContext';
 import { Link } from "react-router-dom";
 
@@ -33,7 +33,7 @@ const Team = () => {
               <img
                 src={MasterBarber}
                 alt="Master Barber at Fade2Black"
-                className="w-full h-80 object-cover object-top"
+                className="w-full h-80 object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
@@ -101,7 +101,7 @@ const Team = () => {
               <img
                 src={MasterBarber}
                 alt="Master Barber at Fade2Black"
-                className="w-full h-[600px] object-cover object-top"
+                className="w-full h-[600px] object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               
