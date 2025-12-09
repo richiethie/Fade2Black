@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="w-full h-[200px] rounded-lg shadow-2xl shadow-black mb-6">
             <iframe
               className="w-full h-full rounded-lg"
-              src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=15+Sterling+Ave,+Suite+1,+Oshkosh,+WI+54901`}
+              src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=1092+S+Koeller+St,+Oshkosh,+WI+54902`}
               allowFullScreen
               loading="lazy"
             ></iframe>
@@ -27,8 +27,8 @@ const Footer = () => {
             <div className="flex items-center space-x-4 mb-4">
               <img src={Fade2BlackLogo} alt="Fade2Black Logo" className="h-16" />
               <div className="flex flex-col text-center">
-                <p className="text-sm">15 Sterling Ave, Suite 1</p>
-                <p className="text-sm">Oshkosh, WI 54901</p>
+                <p className="text-sm">1092 S Koeller St</p>
+                <p className="text-sm">Oshkosh, WI 54902</p>
                 <p>
                   <a href="tel:+19202511683" className="text-sm">920-251-1683</a>
                 </p>
@@ -83,7 +83,7 @@ const Footer = () => {
         <div className="w-full md:w-1/2 h-[300px] md:h-[300px] lg:h-[400px] rounded-lg shadow-2xl shadow-black">
           <iframe
             className="w-full h-full rounded-lg"
-            src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=15+Sterling+Ave,+Suite+1,+Oshkosh,+WI+54901`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=1092+S+Koeller+St,+Oshkosh,+WI+54902`}
             allowFullScreen
             loading="lazy"
           ></iframe>
@@ -95,8 +95,8 @@ const Footer = () => {
             <div className="flex items-center space-x-4">
               <img src={Fade2BlackLogo} alt="Fade2Black Logo" className="h-30 mb-4" />
               <div className="flex flex-col text-center">
-                <p className="text-sm">15 Sterling Ave, Suite 1</p>
-                <p className="text-sm">Oshkosh, WI 54901</p>
+                <p className="text-sm">1092 S Koeller St</p>
+                <p className="text-sm">Oshkosh, WI 54902</p>
                 <p>
                   <a href="tel:+19202511683" className="text-sm">920-251-1683</a>
                 </p>

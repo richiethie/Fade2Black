@@ -28,8 +28,8 @@ const Location = () => {
                     <MapPin className="mt-1 mr-4 flex-shrink-0 text-gray-800" size={24} />
                     <div>
                       <h3 className="font-semibold text-xl mb-1">Address</h3>
-                      <p className="text-lg">15 Sterling Ave, Suite 1</p>
-                      <p className="text-lg">Oshkosh, WI 54901</p>
+                      <p className="text-lg">1092 S Koeller St</p>
+                      <p className="text-lg">Oshkosh, WI 54902</p>
                     </div>
                   </div>
                   
@@ -72,7 +72,7 @@ const Location = () => {
                 <p className="mb-6">Use your preferred navigation app to find us:</p>
                 <div className="flex flex-wrap gap-4">
                   <a 
-                    href="https://www.google.com/maps/dir/?api=1&destination=15+Sterling+Ave,+Suite+1,+Oshkosh,+WI+54901" 
+                    href="https://www.google.com/maps/dir/?api=1&destination=1092+S+Koeller+St,+Oshkosh,+WI+54902" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center bg-white text-black py-3 px-6 font-semibold hover:bg-gray-200 transition-colors"
@@ -81,7 +81,7 @@ const Location = () => {
                     Google Maps
                   </a>
                   <a 
-                    href="https://maps.apple.com/?address=15+Sterling+Ave,+Suite+1,+Oshkosh,+WI+54901" 
+                    href="https://maps.apple.com/?address=1092+S+Koeller+St,+Oshkosh,+WI+54902" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center bg-white text-black py-3 px-6 font-semibold hover:bg-gray-200 transition-colors"
@@ -98,7 +98,7 @@ const Location = () => {
               <div className="overflow-hidden shadow-lg h-96 md:h-full">
                 <iframe
                   className="w-full h-full border-0"
-                  src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=15+Sterling+Ave,+Suite+1,+Oshkosh,+WI+54901`}
+                  src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=1092+S+Koeller+St,+Oshkosh,+WI+54902`}
                   allowFullScreen
                   loading="lazy"
                   title="Armon Empire Location"
@@ -108,7 +108,6 @@ const Location = () => {
               <div className="bg-gray-100 p-8 shadow-md">
                 <h2 className="text-2xl font-bold mb-4">Parking Information</h2>
                 <p className="mb-4">Free parking is available in our dedicated lot directly in front of our building.</p>
-                <p className="text-gray-700">Additional street parking can be found along Sterling Ave</p>
               </div>
             </div>
           </div>
